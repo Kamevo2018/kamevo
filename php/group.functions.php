@@ -2,7 +2,7 @@
     //Setting up the database
     $dsn = 'mysql:dbname=kamevo;host=localhost';
     $user = 'root';
-    $password = '3VqF;wc=K.57w*7C3e]D';
+    $password = '';
     $db = new PDO($dsn, $user, $password);
 
     //Get group's infos
