@@ -1,0 +1,42 @@
+@media all and (max-width: 1200px){
+.profile-picture{
+	width: 100px;
+	height: 100px;
+	margin-top: 35px;
+	border: solid 1px white;
+	border-radius: 0;
+	margin-left: 0;
+	position: absolute;
+}
+.profile-infos{
+	box-sizing: border-box;
+	margin-top: 40vh;
+	padding: 5px;
+	width: 100%;
+	background-color: white;
+	border-bottom: none;
+	padding-left: 0;
+	border-top: solid 2px #e67e22;
+	border-bottom: solid 1px rgba(0,0,0,0.1);
+}
+.profile-info{
+	width: 100%;
+	display: block;
+	font-size: 20px;
+	padding: 6px;
+	padding-left: 15px;
+	/* border-bottom: solid 1px rgba(0,0,0,0.1); */
+	background-color: white;
+}
+.flux-container{
+	margin-top: 190px;
+}
+.profile-header{
+	background-position: 50% calc(50% + 30px);
+	background-size: cover;
+	height: 40vh;
+}
+.profile-status{
+	display: none;
+}
+}

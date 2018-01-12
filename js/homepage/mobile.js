@@ -1,0 +1,10 @@
+	$('.m-log').click(function(e){
+		$('.mobile-header').toggleClass('mopen');
+		$('.m-h-filter').toggleClass('filtered');
+		e.preventDefault();
+	});
+	$('.m-h-filter').click(function(e){
+		$('.mobile-header').removeClass('mopen');
+		$('.m-h-filter').removeClass('filtered');
+		e.preventDefault();
+	});

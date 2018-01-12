@@ -1,0 +1,12 @@
+$(".publisher").click(function(e){
+	$('.post').addClass("posted")
+	e.preventDefault()
+})
+$('.darkness').click(function(e){
+	$('.post').removeClass("posted")
+	e.preventDefault()
+})
+$('.right').click(function(e){
+	$('.post').removeClass("posted")
+	e.preventDefault()
+})

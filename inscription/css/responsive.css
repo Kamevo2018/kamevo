@@ -1,0 +1,10 @@
+@media all and (max-width: 550px){
+	.container{
+		width: 90vw;
+	}
+	.usefuls{
+    		display: inline-block;
+		width: 500px;
+		margin-left: -85px;
+	}
+}
