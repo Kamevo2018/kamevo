@@ -1,0 +1,357 @@
+.flux-hello{
+	background: white;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+	border: solid 1px rgba(0,0,0,0.1);
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+	margin-bottom: -18px;
+}
+.flux-hello h4{
+	color: #333333;
+	padding-bottom: 5px;
+}
+.flux-hello p{
+	color: rgba(0,0,0,0.7);
+}
+.hello-link{
+	color: #333333;
+	text-decoration: none;
+}
+.top-mb-n{
+	margin-bottom: -16px;
+}
+.welcome-img{
+	width: 100%;
+	margin-top: -2px;
+	box-sizing: border-box;
+	border: solid 1px rgba(0,0,0,0.05);
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+	border-top: none;
+}
+.welcome-title{
+	margin-top: 2px;
+	margin-bottom: -2px;
+}
+/*Flux-block*/
+.flux-block{
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 8px;
+	background: white;
+	border: solid 1px rgba(0,0,0,0.1);
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+.flux-block-header{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+}
+.flux-block-avatar{
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	display: inline-block;
+	object-fit: cover;
+}
+.flux-block-author{
+	display: inline-block;
+	position: absolute;
+	margin-left: 5px;
+	color: #e67e22;
+}
+.flux-block-date{
+	display: inline-block;
+	position: absolute;
+	margin-top: 19px;
+	margin-left: 5px;
+	color: rgba(0,0,0,0.8);
+	font-size: 12px;
+}
+.flux-block-delete{
+	font-size: 15px;
+	margin-right: 15px;
+	margin-top: -3px;
+	color: rgba(0,0,0,0.8);
+	padding: 5px;
+	float: right;
+}
+.flux-block-delete-more{
+	background-color: white;
+	position: relative;
+	z-index: 555;
+	padding: 12px;
+	float: right;
+	margin-right: 3px;
+	border: solid 1px rgba(0,0,0,0.1);
+	animation: delete .1s;
+}
+@keyframes delete{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.delete-block-undisplayed{
+	display: none;
+}
+.flux-block-delete-link{
+	color: #333333;
+	text-decoration: none;
+	font-weight: 900;
+}
+.flux-block-delete:hover{
+	cursor: pointer;
+}
+.flux-block-status{
+	position: absolute;
+	margin-top: 32px;
+	margin-left: 5px;
+	font-size: 12px;
+	color: rgba(0,0,0,0.5);
+}
+.flux-block-content{
+	padding: 10px;
+	padding-top: 0;
+	color: rgba(0,0,0,0.8);
+}
+.flux-block-tools{
+	padding: 10px;
+	padding-left: 2px;
+	padding-bottom: 3px;
+	padding-top: 5px;
+	border-top: solid 1px rgba(0,0,0,0.1);
+}
+.likes-tools{
+	display: inline-block;
+}
+.like{
+	color: #333333;
+	font-size: 20px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 5px;
+}
+.b-like{
+	color: #333333;
+	cursor: pointer;
+	transition: all ease .2s;
+}
+.b-like:hover{
+	color: #e67e22;
+	cursor: pointer;
+}
+.liked a{
+	color: #e67e22;	
+	cursor: pointer;
+}
+.dislike{
+	color: #333333;
+	font-size: 18px;
+}
+.dislike:hover{
+	cursor: pointer;
+}
+
+.b-dislike{
+	color: #333333;
+	transition: all ease .2s;
+	cursor: pointer;
+}
+.b-dislike:hover{
+	color: rgba(192, 57, 43,1.0);
+	transition: all ease .2s;
+	cursor: pointer;
+}
+.shared a{
+	color: #e67e22;
+	cursor: pointer;
+}
+.b-share{
+	font-size: 20px;
+	color: #333333;
+	transition: all ease .2s;
+}
+.b-share:hover{
+	color: #e67e22;
+	cursor: pointer;
+}
+.disliked a{
+	color: rgba(192, 57, 43,1.0);
+	cursor: pointer;
+}
+.tools-comment{
+	text-decoration: none;
+	float: right;
+	color: #333333;
+}
+progress {
+  display: inline-block;
+  width: 366px;
+  height: 17px;
+  border: 3px solid white;
+  background-color: rgba(231, 76, 60,1.0);
+  border-radius: 8px;
+}
+progress::-webkit-progress-bar {
+  border-radius: 5px;
+  background-color: rgba(231, 76, 60,1.0);
+}
+progress::-webkit-progress-value {
+  background-color: #e67e22;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-animation: progress 1s linear infinite;
+  animation: progress 1s linear infinite;
+  -webkit-transition : width 1s ease;
+   -moz-transition : width 1s ease;
+     -o-transition : width 1s ease;
+        transition : width 1s ease;
+}
+progress::-moz-progress-bar {
+	height: 10px;
+background-color: #e67e22;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-transition : width 1s ease;
+   -moz-transition : width 1s ease;
+     -o-transition : width 1s ease;
+        transition : width 1s ease;
+}
+progress::-moz-progress-value {
+  background-color: #e67e22;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.3));
+  background-size: 40px 40px;
+  -webkit-transition : width 1s ease;
+   -moz-transition : width 1s ease;
+     -o-transition : width 1s ease;
+        transition : width 1s ease;
+}
+.flux-block-image{
+	padding: 10px;
+	padding-top: 0;
+	box-sizing: border-box;
+}
+.flux-block-img{
+	width: 100%;
+	max-height: 553px;
+	object-fit: cover;
+	margin-bottom: -3px;
+}
+.flux-video{
+	width: 100%;
+	height: 312px;
+	border: none;
+}
+.flux-hello-last{
+	background: white;
+	width: 575px;
+	margin-left: calc((100% - 540px)/2);
+	margin-top: -10px;
+	margin-bottom: 25px;
+	box-sizing: border-box;
+	padding: 8px;
+	border: solid 1px rgba(0,0,0,0.1);
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+.flux-hello-last h4{
+	color: #333333;
+	padding-bottom: 5px;
+}
+.flux-hello-last p{
+	color: rgba(0,0,0,0.7);
+}
+.flux-black{
+	color: #333333;
+	font-size: 14px;
+	text-decoration: none;
+}
+.flux-shared{
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: solid 1px rgba(0,0,0,0.1);
+	padding: 5px;
+	font-size: 13px;
+}
+.flux-shared span{
+	color: black;
+	font-weight: 900;
+}
+.flux-shared-profile{
+	text-decoration: none;
+	color: #e67e22;
+}
+@-moz-document url-prefix() {
+	progress {
+		display: inline-block;
+		width: 380px;
+		height: 10px;
+		border: 3px solid white;
+		background-color: rgba(231, 76, 60,1.0);
+		border-radius: 8px;
+	}
+}
+/* Week user */
+.week-user{
+	width: 100%;
+	background: white;
+	border: solid 1px rgba(0,0,0,0.1);
+	border-bottom: solid 1px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+	margin-bottom: -15px;
+}
+.week-user-suggestion span{
+	color: black;
+	font-weight: 900;
+}
+.week-user-profile{
+	text-decoration: none;
+	color: #e67e22;
+}
+.week-user-head{
+	width: 100%;
+	height: 140px;
+	background-position: center;
+	background-size: cover;
+	border-top-left-radius: 1px;
+	border-top-right-radius: 1px;
+}
+.week-user-avatar{
+	width: 60px;
+	height: 60px;
+	border: solid white 1px;
+	border-radius: 4px;
+	margin-left: 10px;
+	margin-top: 90px;
+}
+.week-user-infos{
+	width: 100%;
+	background: white;
+	border-top: solid 1px rgba(0,0,0,0.1);
+	box-sizing: border-box;
+	margin-top: -15px;
+	padding: 8px;
+	padding-left: 80px;
+}
+.fz12{
+	font-size: 12px;
+	color: #333333;
+}
+.week-user-banner{
+	color: white;
+	font-size: 12px;
+	background-color: #e67e22;
+	padding: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: right;
+	border-radius: 2px;
+}

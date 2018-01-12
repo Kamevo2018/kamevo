@@ -1,0 +1,118 @@
+.darkness{
+	position: fixed;
+	z-index: 99999999999999999999999999999999;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.75);
+}
+.post{
+	display: none;
+}
+.posted{
+	display: block;
+}
+.post-header{
+	position: fixed;
+	z-index: 9999999999999999999999999999999999;
+	box-sizing: border-box;
+	margin-left: calc((100% - 540px)/2);
+	background: white;
+	padding: 5px;
+	width: 575px;
+	top: 20vh;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.right{
+	position: absolute;
+	right: 9px;
+	top: 1px;
+	font-size: 25px;
+	color: #e67e22;
+}
+.post-content{
+	position: fixed;
+	z-index: 9999999999999999999999999999999999999;
+	margin-left: calc((100% - 540px)/2);
+	box-sizing: border-box;
+	width: 575px;
+	padding: 10px;
+	top: calc(5vh + 33px);
+	background-color: white;
+	border-top: solid rgba(230, 126, 34, 0.5) 1px;
+	border-radius: 4px;
+	animation: fadeIn .5s;
+	max-height: 80vh;
+	overflow-y: auto;
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.post-content textarea{
+	border: solid 1px rgba(0,0,0,0.1);
+	border-radius: 4px;
+	width: 100%;
+	height: 250px;
+	box-sizing: border-box;
+	padding: 8px;
+	margin-bottom: 18px;
+	resize: none;
+}
+label{
+	float: left;
+	margin-left: 2px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-weight: 900;
+	font-family: "Open Sans";
+}
+.post-option{
+	width: 100%;
+	font-family: "Open Sans";
+	font-weight: 900;
+	color: #e67e22;
+}
+.input{
+	border: solid 1px rgba(0,0,0,0.1);
+	border-radius: 4px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 8px;
+	margin-bottom: 10px;
+	resize: none;
+}
+.submit{
+	padding: 10px;
+	color: white;
+	border: solid #e67e22 1px;
+	border-radius: 4px;
+	background-color: e67e22;
+	font-size: 14px;
+	width: 100%;
+	transition: all ease .1s;
+	background: #e67e22;
+	text-decoration: none;
+}
+.submit:hover{
+	cursor: pointer;
+	background: rgba(230, 126, 34, 0.95);
+}
+.notify{
+	position: absolute;
+}
+.mr{
+	margin-left: 15px;
+}
